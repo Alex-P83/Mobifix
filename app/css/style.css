@@ -127,6 +127,14 @@
 .block-right-text {
   text-align: right; }
 
+.own-service {
+  min-height: 405px;
+  background: url("../images/bg-own-service.jpg") no-repeat center;
+  background-size: cover; }
+
+.title {
+  text-align: center; }
+
 .footer {
   background: url("../images/bg_footer.png") no-repeat center;
   background-size: cover; }

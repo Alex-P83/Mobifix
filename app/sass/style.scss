@@ -134,6 +134,18 @@ $mainColor:#f9a519;
     text-align: right;
 }
 
+// Own service
+
+.own-service{
+    min-height: 405px;
+    background: url('../images/bg-own-service.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.title{
+    text-align: center;
+}
+
 // Footer
 
 .footer{

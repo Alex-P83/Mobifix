@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bundle.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu-style.css">
+    <!-- <link rel="stylesheet" href="css/menu-style.css"> -->
 
     <title>Mobifix</title>
   </head>
@@ -126,6 +126,44 @@
                         <span class="product-block__link">iMac<br>Macbook</span>
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hot offer -->
+    <section class="hot-offer">
+        <div class="container">
+            <div class="sentences">
+                <ul class="sentences-nav nav"  id="myTab" role="tablist">
+                    <li class="sentences-nav__item">
+                        <a class="sentences-nav__link active" id="home-tab" data-toggle="tab" href="#new" role="tab" aria-controls="home" aria-selected="true">Новинки</a>
+                    </li>
+                    <li class="sentences-nav__item">
+                        <a class="sentences-nav__link" id="profile-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="profile" aria-selected="false">Популярные товары</a>
+                    </li>
+                    <li class="sentences-nav__item">
+                        <a class="sentences-nav__link" id="contact-tab" data-toggle="tab" href="#disconts" role="tab" aria-controls="contact" aria-selected="false">Скидки</a>
+                    </li>
+                </ul>
+                <div class="sentences-content tab-content">
+                    <div class="sentences-content__tab tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="wrapper">
+                            <div class="sentences-content__item">
+                                <div class="sentences-content__photo">
+                                    <img src="images/item.jpg" alt="photo">
+                                </div>
+                                <div class="sentences-content__title">
+                                    <h3>iPhone X 64Gb Silver</h3>
+                                    <p>820$</p>
+                                </div>
+                            </div>
+                            <div class="sentences-content__item">2</div>
+                            <div class="sentences-content__item">3</div>
+                            <div class="sentences-content__item">4</div>                            
+                        </div>
+                    </div>
+                    <div class="sentences__content-item tab-pane fade" id="popular" role="tabpanel" aria-labelledby="profile-tab">...2</div>
+                    <div class="sentences__content-item tab-pane fade" id="disconts" role="tabpanel" aria-labelledby="contact-tab">...3</div>
+                </div>                                 
             </div>
         </div>
     </section>

@@ -1,5 +1,9 @@
 $mainColor:#f9a519;
 
+body{
+    background: #f5f5f5;
+}
+
 // Header
 
 .information-block{
@@ -137,15 +141,82 @@ $mainColor:#f9a519;
 // Own service
 
 .own-service{
-    min-height: 405px;
+    position: relative;
+    height: 405px;
     background: url('../images/bg-own-service.jpg') no-repeat center;
     background-size: cover;
+    .container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .title{
     text-align: center;
+    &__headline{
+        font-size: 40px;
+        font-weight: 700;
+        color:#fff;
+        line-height: 1em;
+        margin:0 0 10px;
+        text-transform: uppercase;
+    }
+    &__subtitle{
+        font-size: 20px;
+        font-weight: 500;
+        color:#fff;
+        line-height: 1.2em;
+        margin:0;
+    }
 }
 
+// Hot offer
+
+.hot-offer{
+    position: relative;
+    padding-top: 30px;
+    margin-bottom: -60px;
+    z-index: 2;
+}
+
+.sentences{
+    padding: 25px;
+    background: #fafafa;
+}
+
+.sentences-nav{
+    padding-bottom: 15px;
+    border-bottom:1px solid #ccc;
+    &__item{
+        padding-right: 30px;
+        &:last-child{
+            padding-right: 0;
+        }
+    }
+    &__link{
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.sentences-content{
+    margin-left: -20px;
+    margin-right: -20px;
+    .wrapper{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    &__item{
+        width:calc(100%/4);
+        padding: 20px 10px;
+        margin:20px;
+        border: 1px solid #ccc;
+    }
+}
 // Footer
 
 .footer{

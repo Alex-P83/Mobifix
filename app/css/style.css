@@ -1,3 +1,6 @@
+body {
+  background: #f5f5f5; }
+
 .information-block {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -128,12 +131,78 @@
   text-align: right; }
 
 .own-service {
-  min-height: 405px;
+  position: relative;
+  height: 405px;
   background: url("../images/bg-own-service.jpg") no-repeat center;
   background-size: cover; }
+  .own-service .container {
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .title {
   text-align: center; }
+  .title__headline {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1em;
+    margin: 0 0 10px;
+    text-transform: uppercase; }
+  .title__subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.2em;
+    margin: 0; }
+
+.hot-offer {
+  position: relative;
+  padding-top: 30px;
+  margin-bottom: -60px;
+  z-index: 2; }
+
+.sentences {
+  padding: 25px;
+  background: #fafafa; }
+
+.sentences-nav {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc; }
+  .sentences-nav__item {
+    padding-right: 30px; }
+    .sentences-nav__item:last-child {
+      padding-right: 0; }
+  .sentences-nav__link {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase; }
+
+.sentences-content {
+  margin-left: -20px;
+  margin-right: -20px; }
+  .sentences-content .wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .sentences-content__item {
+    width: calc(100%/4);
+    padding: 20px 10px;
+    margin: 20px;
+    border: 1px solid #ccc; }
 
 .footer {
   background: url("../images/bg_footer.png") no-repeat center;

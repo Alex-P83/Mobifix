@@ -6,6 +6,10 @@ body{
 
 // Header
 
+.top-block{
+    padding: 30px 0;
+}
+
 .information-block{
     display: flex;
     align-items: center;
@@ -15,17 +19,19 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 20px;
+        margin-right: 15px;
     }
     &__text{
         h4{
             font-size: 14px;
+            line-height: 1.2em;
             font-weight: 700;
             text-transform: uppercase;
-            margin:0;
+            margin:0 0 5px;
         }
         p{
             font-size: 14px;
+            line-height: 1.2em;
             font-weight: 400;
             color:#666;
             margin:0;
@@ -33,10 +39,13 @@ body{
     }
 }
 
+.block_margin-left{
+    margin-left: -20px;
+}
+
 .menu{
     background: $mainColor;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
-    padding: 15px 0;
     &__list{
         padding: 0;
         margin:0;
@@ -44,8 +53,34 @@ body{
         justify-content: space-between;
         li{
             list-style: none;
+            a{
+                font-size: 16px;
+                line-height: 1.2em;
+                font-weight: 400;
+                color:#fff;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
     }
+    &__block{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;     
+    }
+    &__search,&__basket{
+        width: 65px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right:1px solid rgba(255,255,255,0.5);
+    }
+    &__search{
+       border-left:1px solid rgba(255,255,255,0.5); 
+    }    
 }
 
 // Main slider
@@ -184,6 +219,17 @@ body{
 .sentences{
     padding: 25px;
     background: #fafafa;
+    &__title{
+        padding-bottom: 15px;
+        border-bottom:1px solid #ccc;        
+        h3{
+            font-size: 18px;
+            font-weight: 700;
+            color:#999;
+            text-transform: uppercase;
+            text-decoration: none;          
+        }  
+    }
 }
 
 .sentences-nav{
@@ -198,7 +244,13 @@ body{
     &__link{
         font-size: 18px;
         font-weight: 700;
+        color:#999;
         text-transform: uppercase;
+        text-decoration: none;
+        &.active,&:hover{
+            color:#835301;
+            text-decoration: none;
+        }
     }
 }
 
@@ -216,10 +268,102 @@ body{
         margin:20px;
         border: 1px solid #ccc;
     }
+    &__title{
+        text-align: center;
+        margin-top: 10px;
+        h3{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.2em;
+            margin:0 0 5px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 1.2em;
+            font-weight: 400;
+            color:#999;
+            margin:0;
+        }
+    }
 }
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:241px;
+    height: 48px;
+    border-radius: 24px;
+    background: #835301;
+    margin:0 auto;
+    font-size: 16px;
+    font-weight: 700;
+    color:#fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover{
+        color:#fff;
+        text-decoration: none;
+        background: lighten(#835301,5%);
+    }
+}
+
+// Accessories
+.accessories{
+    position: relative;
+    z-index: 2;
+    margin-top: -60px;
+    margin-bottom: -60px;
+}
+
+.sentences_with-title{
+    .sentences-nav{
+        border:none;
+        padding:0;
+        margin-top: 20px;
+        &__link{
+            font-size: 14px;
+            font-weight: 400;
+            &:hover,&.active{
+                text-decoration: underline;
+            }            
+        }
+    }    
+}
+
 // Footer
 
 .footer{
     background: url('../images/bg_footer.png') no-repeat center;
     background-size: cover;
+    padding-top: 100px;
+}
+
+.block_modify{
+    padding-top: 30px;
+    padding-bottom: 0;
+    hr{
+        height: 1px;
+        background: rgba(204,204,204,1);
+        border:none;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .information-block__text{
+        h4{
+            color:#fff;
+        }
+    }
+}
+
+.footer_menu{
+    background: none;
+    box-shadow: none;
+    padding: 18px 0;
+    .menu__list{
+      justify-content: space-around;
+      a{
+          font-size: 14px;
+      }  
+    }
 }

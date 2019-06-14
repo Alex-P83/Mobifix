@@ -267,6 +267,9 @@ body{
         padding: 20px 10px;
         margin:20px;
         border: 1px solid #ccc;
+        &:hover{
+            text-decoration: none;
+        }
     }
     &__title{
         text-align: center;
@@ -276,6 +279,8 @@ body{
             font-weight: 700;
             line-height: 1.2em;
             margin:0 0 5px;
+            color:#000;
+            text-decoration: none;
         }
         p{
             font-size: 16px;
@@ -283,8 +288,13 @@ body{
             font-weight: 400;
             color:#999;
             margin:0;
+            text-decoration: none;
         }
     }
+}
+
+.wrap-btn{
+    margin:10px 0;
 }
 
 .button{
@@ -340,14 +350,22 @@ body{
 }
 
 .block_modify{
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 0;
     hr{
         height: 1px;
         background: rgba(204,204,204,1);
         border:none;
-        margin-top: 30px;
+        margin-top: 40px;
         margin-bottom: 0;
+    }
+    .small_logo{
+        a{
+            display: inline-block;
+            img{
+              max-width: 70%;  
+            }
+        }
     }
     .information-block__text{
         h4{

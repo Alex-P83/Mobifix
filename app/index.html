@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bundle.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/menu-style.css"> -->
+    <link rel="stylesheet" href="css/menu-style.css">
 
     <title>Mobifix</title>
   </head>
@@ -21,12 +21,12 @@
         <div class="top-block">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
                         <div class="logo">
                             <a href="#"><img src="images/logo.png" alt="logo"></a>
                         </div>
                     </div>
-                    <div class="col-3 offset-xl-1">
+                    <div class="col-12 col-md-4 col-lg-3 offset-xl-1">
                         <div class="information-block">
                             <div class="information-block__icon">
                                 <img src="images/icon_1.png" alt="icon">
@@ -37,7 +37,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-md-4 col-lg-3">
                         <div class="information-block block_margin-left">
                             <div class="information-block__icon">
                                 <img src="images/icon_2.png" alt="icon">
@@ -48,7 +48,7 @@
                             </div>                        
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
                         <div class="information-block block_margin-left">
                             <div class="information-block__icon">
                                 <img src="images/icon_3.png" alt="icon">
@@ -65,7 +65,14 @@
         <div class="menu">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-8">
+                    <div class="col-8 d-lg-none order_block-1">
+                        <div class="colapse-menu-button">
+                            <button class="c-hamburger c-hamburger--htx">
+                                <span>toggle menu</span>
+                            </button>         
+                        </div>                         
+                    </div>
+                    <div class="col-12 col-lg-9 col-xl-8 order_block-2">
                         <ul class="menu__list">
                             <li><a href="#">iPhone</a></li>
                             <li><a href="#">iPad</a></li>
@@ -77,7 +84,7 @@
                             <li><a href="#">Контакти</a></li>
                         </ul>                        
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 col-lg-3 order_block-3">
                         <div class="menu__block">
                             <a href="#" class="menu__search"><img src="images/search_icon.png" alt="search icon"></a>
                             <a href="#" class="menu__basket"><img src="images/cart_icon.png" alt="cart icon"></a>
@@ -110,19 +117,19 @@
     <section class="product-type">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-6 col-md-3">
                     <a href="#" class="product-block">
                         <img src="images/product-type-link1.jpg" alt="link">
                         <span class="product-block__link">Apple<br> Watch</span>
                     </a>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6 product_order-block">
                     <a href="#" class="product-block">
                         <img src="images/product-type-link2.jpg" alt="link">
                         <span class="product-block__link">Apple<br> iPad</span>
                     </a>
                 </div>
-                <div class="col-3">
+                <div class="col-6 col-md-3">
                     <a href="#" class="product-block block-right-text">
                         <img src="images/product-type-link3.jpg" alt="link">
                         <span class="product-block__link">iMac<br>Macbook</span>
